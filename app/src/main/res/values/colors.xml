@@ -14,4 +14,18 @@
   <color name="base">#AAAAAA</color>
   <color name="iron">#CCCCCC</color>
   <color name="white">#FFFFFF</color>
+
+  <array name="array_dot_active">
+    <item>@color/primary</item>
+    <item>@color/primary</item>
+    <item>@color/primary</item>
+    <item>@color/primary</item>
+  </array>
+
+  <array name="array_dot_inactive">
+    <item>@color/accent</item>
+    <item>@color/accent</item>
+    <item>@color/accent</item>
+    <item>@color/accent</item>
+  </array>
 </resources>

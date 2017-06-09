@@ -24,7 +24,7 @@
 
         <item
             android:icon="@drawable/submit"
-            android:id="@+id/nav_notification"
+            android:id="@+id/nav_submit"
             android:title="Submit Show"
             />
         <item
