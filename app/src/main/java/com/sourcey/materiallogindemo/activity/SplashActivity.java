@@ -1,4 +1,4 @@
-package com.sourcey.materiallogindemo;
+package com.sourcey.materiallogindemo.activity;
 
 import android.content.Intent;
 import android.os.Handler;
@@ -7,6 +7,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
+
+import com.sourcey.materiallogindemo.R;
 
 public class SplashActivity extends AppCompatActivity {
 

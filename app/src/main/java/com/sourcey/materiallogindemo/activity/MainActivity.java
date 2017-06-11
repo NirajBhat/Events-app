@@ -1,4 +1,4 @@
-package com.sourcey.materiallogindemo;
+package com.sourcey.materiallogindemo.activity;
 
 import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
@@ -7,6 +7,8 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+
+import com.sourcey.materiallogindemo.R;
 
 
 public class MainActivity extends ActionBarActivity {

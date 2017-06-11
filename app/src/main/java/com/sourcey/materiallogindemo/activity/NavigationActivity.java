@@ -1,5 +1,6 @@
-package com.sourcey.materiallogindemo;
+package com.sourcey.materiallogindemo.activity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
@@ -9,12 +10,17 @@ import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.text.Html;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.GridView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+
+import com.sourcey.materiallogindemo.R;
+import com.sourcey.materiallogindemo.adapter.GridViewAdapter;
+import com.sourcey.materiallogindemo.adapter.MyPagerAdapter;
 
 public class NavigationActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -51,6 +57,14 @@ public class NavigationActivity extends AppCompatActivity
 
         GridViewAdapter adapter = new GridViewAdapter(this);
         gridView.setAdapter(adapter);
+
+        gridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                Intent intent = new Intent(NavigationActivity.this, ActualActivity.class);
+                startActivity(intent);
+            }
+        });
 
         ViewPager.OnPageChangeListener viewPagerPageChangeListener = new ViewPager.OnPageChangeListener() {
 
@@ -123,6 +137,8 @@ public class NavigationActivity extends AppCompatActivity
         if (id == R.id.nav_home) {
 
         } else if (id == R.id.nav_categories) {
+
+
 
         } else if (id == R.id.nav_favorite) {
 

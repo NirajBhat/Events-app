@@ -1,4 +1,4 @@
-package com.sourcey.materiallogindemo;
+package com.sourcey.materiallogindemo.activity;
 
 import android.app.ProgressDialog;
 import android.os.Bundle;
@@ -11,6 +11,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.sourcey.materiallogindemo.R;
 
 import butterknife.ButterKnife;
 import butterknife.Bind;
@@ -34,7 +36,8 @@ public class LoginActivity extends AppCompatActivity {
 
             @Override
             public void onClick(View v) {
-                login();
+                Intent intent = new Intent(LoginActivity.this,MainActivity.class);
+                startActivity(intent); //login();
             }
         });
 

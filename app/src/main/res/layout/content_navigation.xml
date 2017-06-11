@@ -7,17 +7,16 @@
     android:background="@color/white"
     android:orientation="vertical"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="com.sourcey.materiallogindemo.NavigationActivity"
+    tools:context=".activity.NavigationActivity"
     tools:showIn="@layout/app_bar_navigation">
 
 
 
 
     <android.support.v4.view.ViewPager
-        android:background="@color/aluminum"
         android:id="@+id/topevents_viewpager"
         android:layout_width="match_parent"
-        android:layout_height="240dp">
+        android:layout_height="200dp">
     </android.support.v4.view.ViewPager>
 
      <!--   <LinearLayout
@@ -47,13 +46,24 @@
         app:tabBackground="@drawable/tab_selector"
         app:tabGravity="center"
         app:tabIndicatorHeight="0dp"/>
-
+<!--
     <GridView
         android:id="@+id/gridview"
         android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
+        android:layout_height="wrap_content"
         android:columnWidth="10dp"
         android:numColumns="3"
+        android:stretchMode="columnWidth"
+        android:gravity="center"
+        />-->
+    <GridView
+        android:id="@+id/gridview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:columnWidth="90dp"
+        android:numColumns="auto_fit"
+        android:verticalSpacing="10dp"
+        android:horizontalSpacing="10dp"
         android:stretchMode="columnWidth"
         android:gravity="center"
         />

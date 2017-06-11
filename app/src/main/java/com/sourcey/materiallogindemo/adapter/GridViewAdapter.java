@@ -1,4 +1,4 @@
-package com.sourcey.materiallogindemo;
+package com.sourcey.materiallogindemo.adapter;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -6,6 +6,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
+
+import com.sourcey.materiallogindemo.R;
 
 /**
  * Created by next on 9/6/17.
